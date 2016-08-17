@@ -1,0 +1,28 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      D:\Node\node.exe C:\Documents and Settings\TVTNN\Application Data\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.0.6
+[debug] Platform:     win32
+[debug] Node Version: v5.9.0
+[debug] Time:         Wed Aug 17 2016 18:11:40 GMT+0800 (China Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: E:\Assignment
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      D:\Node\node.exe C:\Documents and Settings\TVTNN\Application Data\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.0.6
+[debug] Platform:     win32
+[debug] Node Version: v5.9.0
+[debug] Time:         Wed Aug 17 2016 18:13:54 GMT+0800 (China Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: E:\Assignment
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000

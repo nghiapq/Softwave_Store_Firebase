@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Software Store</title>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/assignment-nghiapqps03124.appspot.com/o/software.png?alt=media&token=422bca22-b458-49b8-bd9c-f300b1bc112a" />
+		
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<div class="login-box animated fadeInUp">
+					<div class="box-header">
+						Đăng nhập
+					</div>
+					<div>
+						<label for="username">Tài khoản</label> 
+						<br /> 
+						<input type="text" id="username">
+					</div>
+					<br /> 
+					<div>
+						<label for="password">Mật khẩu</label>
+						<br />
+						<input type="password" id="password"> 
+					</div>
+					<br />
+					<div>
+						<button type="button" id="LoginButton" onclick="login();">Đăng nhập</button>
+						<button type="button" id="LoginGoogleButton" onclick="loginGoogle();">Google</button>
+					</div>
+					<br /> 
+					<a href="home.html"><p class="small">Bỏ qua đăng nhập</p></a>
+					<a href="#"><p class="small" id="myBtn">Đăng ký</p></a>
+				</div>
+				
+				<div id="myModal" class="modal">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <span class="close">×</span>
+					  Đăng ký
+					</div>
+					<div class="modal-body">
+						<div>
+							<label for="username">Tài khoản</label> 
+							<br /> 
+							<input type="text" id="usernamere">
+						</div>
+						<br /> 
+						<div>
+							<label for="password">Mật khẩu</label>
+							<br />
+							<input type="password" id="passwordre"> 
+						</div>
+						<br />
+						<div>
+							<button type="button" id="SubmitButton" onclick="register();">Xác nhận</button>
+							<button type="button" id="ResetButton" onclick="resetregister();">Xóa</button>
+						</div>
+						<br />
+					</div>
+				  </div>
+				</div>
+				
+				<div id="snackbar"></div>
+			</div>
+		</section>
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script>
+	<script src="js/index.js"></script>
+</html>

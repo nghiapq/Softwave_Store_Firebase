@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Software Store</title>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/assignment-nghiapqps03124.appspot.com/o/software.png?alt=media&token=422bca22-b458-49b8-bd9c-f300b1bc112a" />
+	</head>
+
+	<body>
+		<header>
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			  <div class="overlay-content">
+				<a href="#" style="color:#f1f1f1">Trang chủ</a>
+				<a href="#showItemProduct">Sản phẩm</a>
+				<a href="#section">Giới thiệu</a>
+				<a href="#">Liên hệ</a>
+				<a href="#" id="loginclick" onclick="document.getElementById('id01').style.display='block';closeNav();">Đăng nhập</a>
+				<a href="#" id="logoutclick" onclick="logout();">Đăng xuất</a>
+			  </div>
+			</div>
+		
+			<span style="font-size:30px;cursor:pointer;position:fixed;z-index:2;left:10px;top:5px;color:white" onclick="openNav()">☰</span>
+		
+			<div class="slideshow-container animated rotateInUpLeft">
+
+			<div class="mySlides fade">
+			  <img src="https://firebasestorage.googleapis.com/v0/b/assignment-nghiapqps03124.appspot.com/o/2.jpg?alt=media&token=660a2604-60be-4c94-8d18-2fadd3c766ee" style="width:100%;height:500px;">
+			  <div class="text">Key kích hoạt tất cả phần mềm Adobe</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="https://firebasestorage.googleapis.com/v0/b/assignment-nghiapqps03124.appspot.com/o/1.jpg?alt=media&token=90cded1f-b50a-4594-ba96-4dac3403a68d" style="width:100%;height:500px;">
+			  <div class="text">Chất lượng hơn số lượng</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="https://firebasestorage.googleapis.com/v0/b/assignment-nghiapqps03124.appspot.com/o/3.jpg?alt=media&token=d7308e29-fe5a-4ac9-882a-ddd24cc6015a" style="width:100%;height:500px;">
+			  <div class="text">Dịch vụ hoạt động vĩnh viễn</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)"><</a>
+			<a class="next" onclick="plusSlides(1)">></a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			
+			<div id="id01" class="modal">
+  
+			  <form class="modal-content animate">
+				<div class="imgcontainer">
+				  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  
+				</div>
+
+				<div class="container">
+				  <label><b>Tài khoản</b></label>
+				  <input type="text" placeholder="Nhập tài khoản" id="usernamehome">
+
+				  <label><b>Mật khẩu</b></label>
+				  <input type="password" placeholder="Nhập mật khẩu" id="passwordhome">
+					
+				  <input type="button" value="Đăng nhập" id="buttonlogin" onclick="loginhome();">
+				</div>
+
+				<div class="containerfooter" style="background-color:#f1f1f1">
+				  <button type="button" onclick="document.getElementById('id01').style.display='none';changeLocation();" class="cancelbtn">Về trang đầu để đăng ký</button>
+				</div>
+			  </form>
+			</div>
+			
+			<div id="snackbar">Đăng nhập thành công</div>
+		</header>
+		<section class="animated zoomInUp" id="section">
+			<div class="card">
+			  <img src="https://firebasestorage.googleapis.com/v0/b/assignment-nghiapqps03124.appspot.com/o/lamkinbrian.jpg?alt=media&token=969dadf9-eab0-4ebb-9eea-bc658b617cb5" alt="Avatar" style="width:100%">
+			  <div class="container">
+				<h4><b>Bryan Lamkin</b></h4>
+				<p>Phó chủ tịch & Giám đốc</p>
+			  </div>
+			</div>
+			
+			<div class="introduce">
+				<div class="introduce-title">
+					Bryan Lamkin
+				</div>
+				<div class="introduce-content">
+					Ông là phó chủ tịch điều hành kiêm tổng giám đốc Digital Media của Adobe. 
+					<br />
+					Lamkin làm việc cho Adobe từ năm 1992 đến năm 2006 ở các vị trí cao tại đây.
+					<br />
+					Ông tái gia nhập công ty vào tháng Hai năm 2013 khi phó chủ tịch cấp cao về công nghệ và phát triển của công ty trước chuyển sang bộ phận khác.
+					<br />
+					Ông có bằng Cử nhân và Thạc sĩ Quản trị Kinh doanh tại Đại học California, Berkeley và là một thành viên của Phi Beta Kappa Honors Society.
+				</div>
+				<div class="introduce-footer">
+				</div>
+			</div>
+		</section>
+		<article>
+			<div id="showItemProduct">
+				
+			</div>
+			
+		</article>
+		
+		<div id="myModal" class="modal">
+			<div class="modal-content" style="width:77%;">
+				<div class="modal-header">
+					<span class="closeCart">×</span>
+					Giỏ hàng
+				</div>
+				<div class="modal-body">
+					<div id="listShowItemCart">
+							
+					</div>
+					<br style="clear:both" />
+					<div id="priceSum">
+					</div>
+					<div>
+						<button type="button" id="SubmitButton" onclick="InfoModalUser();">Thanh toán</button>
+						<button type="button" id="ResetButton" onclick="deleteAllDataCart();">Xóa tất cả</button>
+					</div>
+					<br />
+				</div>
+			</div>
+		</div>
+		
+		<div id="myModalUser" class="modal">
+			<div class="modal-content" style="width:77%;">
+				<div class="modal-header">
+					<span class="closeUser">×</span>
+					Thông tin cá nhân
+				</div>
+				<div class="modal-body">
+					<div id="modal-content-info">
+						<div>
+							<label for="">Họ và tên</label> 
+							<br /> 
+							<input type="text" id="nameuser">
+						</div>
+						<div>
+							<label for="">Địa chỉ</label>
+							<br />
+							<input type="text" id="addressuser"> 
+						</div>
+						<div>
+							<label for="">Số điện thoại</label>
+							<br />
+							<input type="text" id="phoneuser"> 
+						</div>	
+					</div>
+					<br style="clear:both" />
+					<div id="priceSumUser">
+					</div>
+					<div>
+						<button type="button" id="SubmitButton" onclick="SubmitBuy();">Xác nhận</button>
+					</div>
+					<br />
+				</div>
+			</div>
+		</div>
+		
+		<img src="images/iconcart.png" id="buttoncart" onclick="checkLoginCart();">
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script src="js/home.js"></script>
+
+</html>
